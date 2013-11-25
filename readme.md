@@ -18,8 +18,8 @@
 <h4>Step 4: Deploy!</h4>
 <p>Deploy the test app to Heroku with <code>git push heroku master</code>. Go to the app's URL in the browser and verify you see a page appear. Refresh the page and watch the counter go up.</p>
 
-<h5>Step 5: Modify the App</h5>
-<p>Right now the app only keeps track of the number of hits. Modify the code so that it also keeps a log of what operating system visitors are using (hint: take a look at Flask's request.user_agent function, and the python module <a href="https://pypi.python.org/pypi/httpagentparser">httpagentparser</a>). Print the result to the index.html page. For example:
-<br>Windows: 30<br>Macintosh: 10<br>Internet Explorer: 2</p>
+<h4>Step 5: Modify the App</h4>
+<p>Right now the app only keeps track of the number of hits. Modify the code so that it also keeps a log of what operating system visitors are using (hint: take a look at Flask's request.user_agent output, and the python module <a href="https://pypi.python.org/pypi/httpagentparser">httpagentparser</a>). Print the result to the index.html page. For example:
+<br>Windows: 30<br>Mac: 10<br>Linux: 2</p>
 <p>If you have time, log the user's browser as well, and make a visualization of the data (pie chart? bar chart?)</p>
 
