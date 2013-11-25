@@ -10,11 +10,10 @@ redis = redis.from_url(REDIS_URL)
 @app.route('/')
 def index():
     visitors = redis.get('visitors')
-    if visitors is None:
-        num = 0
-    else:
-        num = int(visitors)
+
+    num = 0 if visitors is None else int(visitors)
     num += 1
+
     redis.set('visitors', num)
     return render_template('index.html', number=num)
 
