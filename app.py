@@ -1,4 +1,4 @@
-import os,json,redis,uuid
+import os,json,redis,httpagentparser
 from flask import Flask,render_template,request
 
 app = Flask(__name__)
@@ -10,6 +10,7 @@ redis = redis.from_url(REDIS_URL)
 @app.route('/')
 def index():
     visitors = redis.get('visitors')
+    os = redis.get('osdata') ||
 
     num = 0 if visitors is None else int(visitors)
     num += 1

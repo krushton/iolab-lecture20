@@ -20,6 +20,6 @@
 
 <h3>Step 5: Modify the App</h3>
 <p>Right now the app only keeps track of the number of hits. Modify the code so that it also keeps a log of what operating system visitors are using (hint: take a look at Flask's request.user_agent output, and the python module <a href="https://pypi.python.org/pypi/httpagentparser">httpagentparser</a>). Print the result to the index.html page. For example:
-<br>Windows: 30<br>Mac: 10<br>Linux: 2</p>
+<br>Windows: 10<br>Mac: 1</p>
 <p>If you have time, log the user's browser as well, and make a visualization of the data (pie chart? bar chart?)</p>
 
